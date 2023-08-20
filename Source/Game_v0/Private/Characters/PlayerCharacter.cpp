@@ -87,6 +87,8 @@ void APlayerCharacter::SetActionState(EActionState NewActionState)
 	case EActionState::EAS_Unoccupied:
 		// Implement state change logic
 		this->bUseControllerRotationYaw = false;
+		this->GetCharacterMovement()->bUseControllerDesiredRotation = false;
+		this->GetCharacterMovement()->bOrientRotationToMovement = true;
 		CameraTransition(MainCameraState);
 
 		if (NC_ProjectilePath)
@@ -105,6 +107,8 @@ void APlayerCharacter::SetActionState(EActionState NewActionState)
 	case EActionState::EAS_Carrying:
 		// Implement state change logic
 		this->bUseControllerRotationYaw = false;
+		this->GetCharacterMovement()->bUseControllerDesiredRotation = false;
+		this->GetCharacterMovement()->bOrientRotationToMovement = true;
 		CameraTransition(HoldingCameraState);
 
 		if (NC_ProjectilePath)
@@ -118,8 +122,9 @@ void APlayerCharacter::SetActionState(EActionState NewActionState)
 
 		break;
 	case EActionState::EAS_ChargingThrow:
-		
-		this->bUseControllerRotationYaw = true;
+		this->GetCharacterMovement()->bUseControllerDesiredRotation = true;
+		this->GetCharacterMovement()->bOrientRotationToMovement = false;
+		//this->bUseControllerRotationYaw = true;
 		CameraTransition(ChargingThrowCameraState);
 		// Implement state change logic
 		SpawnProjectilePathNiagaraSystem();
