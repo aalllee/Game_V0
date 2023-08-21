@@ -1,3 +1,4 @@
-# Game_v0
+# Item Interaction System - V0
 
-Developed with Unreal Engine 5
+[Demo video](https://www.youtube.com/watch?v=BPAYYiQeuuk)https://www.youtube.com/watch?v=BPAYYiQeuuk
+
