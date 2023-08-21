@@ -1,4 +1,4 @@
 # Item Interaction System - V0
 
-[Demo video](https://www.youtube.com/watch?v=BPAYYiQeuuk)https://www.youtube.com/watch?v=BPAYYiQeuuk
+[Demo video](https://www.youtube.com/watch?v=BPAYYiQeuuk)
 
