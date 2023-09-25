@@ -1,7 +1,7 @@
 # Item Interaction System
 [Demo video](https://www.youtube.com/watch?v=BPAYYiQeuuk)
-*Sphere trace based Item selection
-*Pick up, Move around,Throw and Place down items
+* Sphere trace based Item selection
+* Pick up, Move around,Throw and Place down items
 
 # Rail Slide System 
 [Demo video](https://www.youtube.com/watch?v=zGiVMv0kCsc)
